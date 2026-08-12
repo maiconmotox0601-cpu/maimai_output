@@ -1,0 +1,19 @@
+# 辞書
+fruit = {
+    "りんご": {"price": "100円"},
+    "バナナ": {"price": "150円"}
+}
+
+while True:
+  name = input("名前を入力してください。（終了は0）：")
+
+  if name == "0":
+    print("終了します。")
+    break
+  
+  data = fruit.get(name)
+  if data is None:
+    print("データがありません。")
+
+  else:
+    print(data["price"])
