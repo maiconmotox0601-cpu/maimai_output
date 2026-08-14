@@ -1,0 +1,11 @@
+shopping_list = []
+
+while True:
+  item = input("商品名を入力してください(終了は0)：")
+
+  if item == "0":
+    break
+
+  shopping_list.append(item)
+
+print(shopping_list)
